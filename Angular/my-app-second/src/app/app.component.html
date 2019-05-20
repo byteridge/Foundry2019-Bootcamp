@@ -1,5 +1,6 @@
 <div class='wrapper'>
   <div class="holder">
+  <p>Sample User Application</p>
     <table class='table table-bordered'>
       <thead>
         <tr>
@@ -15,13 +16,13 @@
           <td colspan="5" id='emptyTd'>No Users to display</td>
         </tr>
         <tr *ngFor="let user of usersList;let i = index">
-          <td><input type='text' value='{{user.name}}' [autofocus]="this.selectedRow === i" [(ngModel)]='user.name'
+          <td><input type='text' class="form-control" value='{{user.name}}' [(ngModel)]='user.name'
               [readonly]="isInputFieldReadOnly(i)" /></td>
-          <td><input type='text' value='{{user.contact}}' [(ngModel)]='user.contact'
+          <td><input type='text' class="form-control" value='{{user.contact}}' [(ngModel)]='user.contact'
               [readonly]="isInputFieldReadOnly(i)" /></td>
-          <td><input type='text' value='{{user.address}}' [(ngModel)]='user.address'
+          <td><input type='text' class="form-control" value='{{user.address}}' [(ngModel)]='user.address'
               [readonly]="isInputFieldReadOnly(i)" /></td>
-          <td><input type='text' value='{{user.company}}' [(ngModel)]='user.company'
+          <td><input type='text' class="form-control" value='{{user.company}}' [(ngModel)]='user.company'
               [readonly]="isInputFieldReadOnly(i)" /></td>
           <td>
             <button class='btn btn-warning' (click)="onEdit(i)" [disabled]="isEditDisabled(i)">

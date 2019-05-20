@@ -4,7 +4,7 @@ const list =[
         "id" : 1234,
         "address": "Maharashtra",
         "company": "Byteridge",
-        "contact" : 8600718690
+        "contact" : 1111111
     },
     {
         "name" : "Ajay",
