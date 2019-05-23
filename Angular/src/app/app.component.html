@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <div *ngIf="speakers">
+    <table class="pure-table pure-table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let speaker of speakers">
+          <td>{{speaker.name}}</td>
+          <td>{{speaker.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
